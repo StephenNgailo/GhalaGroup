@@ -32,6 +32,11 @@
     'depends': ['stock', 'product'],
     'data': [
         'views/product_label.xml',
+        'views/label_product_view.xml',
+        'views/label_product_template_view.xml',
+        'views/vic.xml',
+        'views/vic_template.xml',
+        #'views/external_layout_clean.xml'
     ],
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
