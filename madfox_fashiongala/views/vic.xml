@@ -1,0 +1,12 @@
+<odoo>
+    <record id="vic" model="ir.actions.report">
+            <field name="name">Vic (ZPL)</field>
+            <field name="model">stock.picking</field>
+            <field name="report_type">qweb-text</field>
+            <field name="report_name">madfox_fashiongala.vic_template</field>
+            <field name="report_file">madfox_fashiongala.vic_template</field>
+            <field name="binding_model_id" ref="stock.model_stock_picking"/>
+            <field name="binding_type">report</field>
+        </record>
+
+</odoo>
