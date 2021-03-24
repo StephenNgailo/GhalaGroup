@@ -1,22 +1,20 @@
 <?xml version="1.0"?>
 <odoo>
+<data>
+    <template id="report_product_template_view"
+        inherit_id="stock.label_product_template_view">
+        <xpath expr="." position="replace">
+        
 
-    <data>
- <template id="report_product_template"
-            inherit_id="stock.label_product_template_view">
-            <xpath expr="." position="replace">
-		
-
-	<t t-foreach="docs" t-as="mainProduct">
-		<t t-translation="off">
-<t t-foreach="mainProduct.product_variant_ids" t-as="product"> 
+            <t t-foreach="docs" t-as="product">
+                <t t-translation="off">
 ^XA
 ^FO20,20
 ^A0N,18,17^FD<t t-esc="product.default_code"/>^FS
 ^FO20,44
 ^A0N,18,17^FD<t t-esc="product.name"/> ^FS
 ^FO20,69
-^A0N,18,17^FD<t t-esc="product.x_studio_product_brands.x_name"/> <t t-if="product.product_variant_count==1" t-foreach="product.attribute_line_ids" t-as="line"> <t t-esc="line.value_ids.name" />, </t> <t t-if="product.product_variant_count>1"t-esc="', '.join(map(lambda x: x.name, product.product_template_attribute_value_ids))"/>^FS
+^A0N,18,17^FD<t t-esc="product.x_studio_product_brands.x_name"/> <t t-if="product.product_variant_count==1" t-foreach="product.attribute_line_ids" t-as="line"> <t t-esc="line.value_ids.name" />, </t> <t t-if="product.product_variant_count>1" t-esc="', '.join(map(lambda x: x.name, product.product_template_attribute_value_ids))"/>^FS
 ^FO20,92
 <t t-if="product.currency_id.position == 'after'">
 ^CI28
@@ -34,9 +32,8 @@
 ^XZ
                 </t>
             </t>
-        </t>
-        
-</xpath>	 
+       </xpath>
 </template>
 </data>
-	</odoo>
+</odoo>
+        

@@ -22,7 +22,7 @@
 ^FO20,20
 ^A0N,18,17^FD<t t-esc="move_line.product_id.default_code"/>^FS
 ^FO20,44
-^A0N,18,17^FD<t t-esc="move_line.product_id.name"/> <t t-if="move_line.product_id.x_studio_product_brands">[<t t-esc="move_line.product_id.x_studio_product_brands.x_name"/>]</t>^FS
+^A0N,18,17^FD<t t-esc="move_line.product_id.name"/> <t t-if="move_line.product_id">[<t t-esc="move_line.product_id"/>]</t>^FS
 ^FO20,69
 ^A0N,18,17^FD<t t-if="move_line.product_id.product_variant_count==1" t-foreach="move_line.product_id.attribute_line_ids" t-as="line"> <t t-esc="line.value_ids.name" />, </t> <t t-if="move_line.product_id.product_variant_count>1" t-esc="', '.join(map(lambda x: x.name, move_line.product_id.product_template_attribute_value_ids))"/>^FS
 <t t-if="move_line.product_id.barcode">
