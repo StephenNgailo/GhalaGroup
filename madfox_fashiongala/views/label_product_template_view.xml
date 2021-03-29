@@ -15,7 +15,7 @@
 ^FO20,44
 ^A0N,18,17^FD<t t-esc="product.name"/> ^FS
 ^FO20,69
-^A0N,18,17^FD<t t-esc="product.x_studio_product_brands.x_name"/> <t t-if="product.product_variant_count==1" t-foreach="product.attribute_line_ids" t-as="line"> <t t-esc="line.value_ids.name" />, </t><t t-esc="', '.join(map(lambda x: x.name, product.product_template_attribute_value_ids))"/>^FS
+^A0N,18,17^FD<t t-esc="product.x_studio_product_brands.x_name"/> <t t-if="product.product_variant_count==1" t-foreach="product.attribute_line_ids" t-as="line"> <t t-esc="line.value_ids.name" />, </t><t t-if="product.product_variant_count>1" t-esc="', '.join(map(lambda x: x.name, product.product_template_attribute_value_ids))"/>^FS
 ^FO20,92
 <t t-if="product.currency_id.position == 'after'">
 ^CI28
