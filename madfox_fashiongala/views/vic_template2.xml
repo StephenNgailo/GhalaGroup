@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
-        <template id="vic_template">
+        <template id="vic_template2">
 
             <t t-set="uom_categ_unit" t-value="env.ref('uom.product_uom_categ_unit')"/>
             <t t-foreach="docs" t-as="picking">
