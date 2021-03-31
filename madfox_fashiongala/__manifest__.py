@@ -36,6 +36,7 @@
         'views/label_product_template_view.xml',
         'views/vic.xml',
         'views/vic_template.xml',
+        'views/vic_template2.xml',
         'views/external_layout_clean.xml'
     ],
     'images': ['static/description/banner.png'],
