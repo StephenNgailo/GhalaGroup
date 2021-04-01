@@ -3,9 +3,9 @@
     <data>
 <template id="assets" inherit_id="web.assets_backend">
           <xpath expr="." position="inside">
-              <script type="text/javascript" src="/Layla_test/static/src/js/BrowserPrint-3.0.216.min.js"></script>
-              <script type="text/javascript" src="/Layla_test/static/src/js/BrowserPrint-Zebra-1.0.216.min.js"></script>
-              <script type="text/javascript" src="/Layla_test/static/src/js/zpl_print.js"></script>
+              <script type="text/javascript" src="/direct_print/static/src/js/BrowserPrint-3.0.216.min.js"></script>
+              <script type="text/javascript" src="/direct_print/static/src/js/BrowserPrint-Zebra-1.0.216.min.js"></script>
+              <script type="text/javascript" src="/direct_print/static/src/js/zpl_print.js"></script>
           </xpath>
         </template>
 
