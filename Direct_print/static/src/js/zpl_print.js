@@ -42,7 +42,7 @@ odoo.define('layla', function (require) {
                         console.debug("Printing the following report data:", report_zpl);
 
                         return new Promise((resolve) => {
-                            self._sendToPrinter(report_zpl).catch((error) => {
+                            self._sendToPrinter(report_zpl).then(resolve).catch((error) => {
                                 console.error('Report printing failed ⚠', error);
                                 
                                 const downloadZPL = confirm(`${error.message}, the report will be downloaded instead.`);
