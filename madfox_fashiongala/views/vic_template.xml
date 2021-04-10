@@ -19,14 +19,14 @@
                         <t t-foreach="range(qty)" t-as="item">
                             <t t-translation="off">
 ^XA
-^FO20,20
+^FO90,20
 ^A0N,18,17^FD<t t-esc="move_line.product_id.default_code"/>^FS
-^FO20,44
+^FO90,44
 ^A0N,18,17^FD<t t-esc="move_line.product_id.name"/> <t t-if="move_line.product_id">[<t t-esc="move_line.product_id"/>]</t>^FS
-^FO20,69
+^FO90,69
 ^A0N,18,17^FD<t t-if="move_line.product_id.product_variant_count==1" t-foreach="move_line.product_id.attribute_line_ids" t-as="line"> <t t-esc="line.value_ids.name" />, </t> <t t-if="move_line.product_id.product_variant_count>1" t-esc="', '.join(map(lambda x: x.name, move_line.product_id.product_template_attribute_value_ids))"/>^FS
 <t t-if="move_line.product_id.barcode">
-^FO20,120^BY1
+^FO90,120^BY1
 ^BCN,50,Y,N,N
 ^FD<t t-esc="move_line.product_id.barcode"/>^FS
 </t>
