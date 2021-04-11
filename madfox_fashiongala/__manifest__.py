@@ -38,6 +38,7 @@
         'views/vic_template.xml',
         'views/vic_template2.xml',
         'views/external_layout_clean.xml',
+        'views/picking_zpl_report.xml'
         
     ],
     'images': ['static/description/banner.png'],
