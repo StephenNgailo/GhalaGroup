@@ -6,11 +6,9 @@
         <xpath expr="." position="replace">
         
 
-<!--             <t t-foreach="docs" t-as="product">
-                <t t-translation="off"> -->
-            <t t-foreach="docs" t-as="mainProduct">
+            <t t-foreach="docs" t-as="product">
                 <t t-translation="off">
-<t t-foreach="mainProduct.product_variant_ids" t-as="product">
+            
 ^XA
 ^FO90,20
 ^A0N,18,17^FD<t t-esc="product.default_code"/>^FS
@@ -35,7 +33,7 @@
 ^XZ
                 </t>
             </t>
-            </t>
+            
        </xpath>
 </template>
 </data>
