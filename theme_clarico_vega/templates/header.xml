@@ -1664,55 +1664,55 @@
               active="False" name="Header style 10" priority="17">
         <xpath expr="//header//nav" position="replace">
             <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc header10">
-<!--                <div class="oe_structure">-->
-<!--                    <section class="container-fluid header_top">-->
-<!--                        <div class="container d-flex justify-content-center justify-content-lg-between">-->
-<!--                            <t t-if="website.social_facebook or website.social_twitter or website.social_linkedin or website.social_youtube or website.social_github">-->
-<!--                                <div class="te_header_social">-->
-<!--                                    <div t-attf-class="s_share te_header_w_share #{_classes or ''}">-->
-<!--                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook"-->
-<!--                                           class="btn btn-link">-->
-<!--                                            <i class="fa fa-facebook"/>-->
-<!--                                        </a>-->
-<!--                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter"-->
-<!--                                           class="btn btn-link">-->
-<!--                                            <i class="fa fa-twitter"/>-->
-<!--                                        </a>-->
-<!--                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin"-->
-<!--                                           class="btn btn-link">-->
-<!--                                            <i class="fa fa-linkedin"/>-->
-<!--                                        </a>-->
-<!--                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube"-->
-<!--                                           class="btn btn-link">-->
-<!--                                            <i class="fa fa-youtube-play"/>-->
-<!--                                        </a>-->
-<!--                                        <a t-if="website.social_github" t-att-href="website.social_github"-->
-<!--                                           class="btn btn-link">-->
-<!--                                            <i class="fa fa-github"/>-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </t>-->
-<!--                            <section class="te_s_header_offer_text">-->
-<!--                                <span>Free Shipping on above $50</span>-->
-<!--                            </section>-->
-<!--                            <div class="te_header_before_right">-->
-<!--                                <div class="te_header_lang"-->
-<!--                                     t-if="request.website.viewref('website.header_language_selector').active or request.website.viewref('website.header_language_selector_inline').active">-->
-<!--                                    <t t-call="website.placeholder_header_language_selector">-->
-<!--                                        <t t-set="_div_classes" t-value="'ml-2'"/>-->
-<!--                                    </t>-->
-<!--                                </div>-->
-<!--                                <t t-set="website_sale_pricelists"-->
-<!--                                   t-value="website.get_pricelist_available(show_visible=True)"/>-->
-<!--                                <div class="h10_pricelist"-->
-<!--                                     t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">-->
-<!--                                    <t t-call="theme_clarico_vega.pricelist_list_ept_10"/>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </section>-->
-<!--                </div>-->
+                <div class="oe_structure">
+                    <section class="container-fluid header_top">
+                        <div class="container d-flex justify-content-center justify-content-lg-between">
+                            <t t-if="website.social_facebook or website.social_twitter or website.social_linkedin or website.social_youtube or website.social_github">
+                                <div class="te_header_social">
+                                    <div t-attf-class="s_share te_header_w_share #{_classes or ''}">
+                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook"
+                                           class="btn btn-link">
+                                            <i class="fa fa-facebook"/>
+                                        </a>
+                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter"
+                                           class="btn btn-link">
+                                            <i class="fa fa-twitter"/>
+                                        </a>
+                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin"
+                                           class="btn btn-link">
+                                            <i class="fa fa-linkedin"/>
+                                        </a>
+                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube"
+                                           class="btn btn-link">
+                                            <i class="fa fa-youtube-play"/>
+                                        </a>
+                                        <a t-if="website.social_github" t-att-href="website.social_github"
+                                           class="btn btn-link">
+                                            <i class="fa fa-github"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </t>
+                            <section class="te_s_header_offer_text">
+                                <span>Free Shipping on above $50</span>
+                            </section>
+                            <div class="te_header_before_right">
+                                <div class="te_header_lang"
+                                     t-if="request.website.viewref('website.header_language_selector').active or request.website.viewref('website.header_language_selector_inline').active">
+                                    <t t-call="website.placeholder_header_language_selector">
+                                        <t t-set="_div_classes" t-value="'ml-2'"/>
+                                    </t>
+                                </div>
+                                <t t-set="website_sale_pricelists"
+                                   t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h10_pricelist"
+                                     t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <t t-call="theme_clarico_vega.pricelist_list_ept_10"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
                 <div class="container justify-content-md-between header_middle">
                     <!-- Navbar Toggler -->
                     <div class="middle_first">
