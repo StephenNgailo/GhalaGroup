@@ -33,7 +33,7 @@ header {
                     #top_menu > li {
                         > a.nav-link {
                             outline: unset;
-                            width: calc(100% - 20px);
+                            width: calc(100% -0px);
                             @if o-website-value('header-links-style') == 'outline' or o-website-value('header-links-style') == 'fill' or o-website-value('header-links-style') == 'pills' or o-website-value('header-links-style') == 'block' {
                                 padding: 6px 18px;
                                 margin: 6px 10px;
