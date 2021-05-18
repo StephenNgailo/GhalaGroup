@@ -756,6 +756,7 @@ body.editor_enable
 		& ul.nav-pills{
 			margin-left:0;
 			& label.nav-link{
+                color: #141414;
 				margin: 0 !important;
 				padding: 0.5rem 0rem;
 				@include position(relative,0,0,0,0);
@@ -772,8 +773,7 @@ body.editor_enable
 				    }
 				    .attr_counter{
 				        background-color: theme-color('primary');
-// 				        color: nth($f_color,5);
-				        color: #141414;
+				        color: nth($f_color,5);
 				        border-color: theme-color('primary');
 				    }
 				}
