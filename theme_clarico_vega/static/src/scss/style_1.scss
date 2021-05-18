@@ -718,14 +718,15 @@ td.text-center.text-xl-right.border-0
 			@include border(20px,27,solid)
 			border-right: 0;
 			border-left: 10px solid nth($f_color,5);
+							top:0 !important;
+				right: -11px !important;
 			&:before
 			{
 				@include position(absolute,-20px,1px,auto,auto)
 				display: block;
 				@include border(20px,27,solid)
 				border-right: 0;
-				top:0 !important;
-				right: -11px !important;
+
 				border-left: 10px solid #141414 !important;
 				content: "";
 
