@@ -772,7 +772,8 @@ body.editor_enable
 				    }
 				    .attr_counter{
 				        background-color: theme-color('primary');
-				        color: nth($f_color,5);
+// 				        color: nth($f_color,5);
+				        color: #141414;
 				        border-color: theme-color('primary');
 				    }
 				}
