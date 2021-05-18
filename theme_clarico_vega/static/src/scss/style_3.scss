@@ -537,7 +537,7 @@ body.editor_enable
 		}
 		& a.active{
 			background-color: nth($f_color,27);
-			color: nth($f_color,19);
+			color: nth($f_color,19) !important;
 		}
 		& i{
 			float: right;
