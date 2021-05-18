@@ -1667,7 +1667,7 @@
         <xpath expr="//header//nav" position="replace">
             <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc header10">
                 <div class="oe_structure">
-                    <section class="container-fluid header_top">
+                    <section class="container-fluid header_top" style="display:none">
                         <div class="container d-flex justify-content-center justify-content-lg-between">
                             <t t-if="website.social_facebook or website.social_twitter or website.social_linkedin or website.social_youtube or website.social_github">
                                 <div class="te_header_social">
