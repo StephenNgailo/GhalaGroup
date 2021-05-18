@@ -533,6 +533,7 @@ body.editor_enable
 			width:90% !important;
 			display: block;
 			padding-right: 0;
+			color: #141414 !important;
 		}
 		& a.active{
 			background-color: nth($f_color,27);
@@ -756,7 +757,6 @@ body.editor_enable
 		& ul.nav-pills{
 			margin-left:0;
 			& label.nav-link{
-                color: #141414 !important;
 				margin: 0 !important;
 				padding: 0.5rem 0rem;
 				@include position(relative,0,0,0,0);
