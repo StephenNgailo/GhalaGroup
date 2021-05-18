@@ -724,7 +724,7 @@ td.text-center.text-xl-right.border-0
 				display: block;
 				@include border(20px,27,solid)
 				border-right: 0;
-				border-left: #141414 !important;
+				border-left: 10px solid #141414 !important;
 				content: "";
 
 			}
