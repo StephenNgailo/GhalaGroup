@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- ======================= Header style option 1========================= -->
+    
     <template id="customize_header_style_1" inherit_id="portal.frontend_layout"
               active="False" name="Header style 1">
         <!-- vertical menu -->
