@@ -512,6 +512,8 @@ INDEX:
 		overflow: hidden;
 		img
 		{
+// 		    tag
+            filter:blur(20px);
 			max-width: 100%;
   			@include transition(all,0.4s,ease-in-out);
 		}
@@ -537,6 +539,8 @@ INDEX:
 			{
 				&:before
 				{
+// 				    tag
+				    filter:blur(0px);
 					@include transform(scale(1));
 				}
 			}
