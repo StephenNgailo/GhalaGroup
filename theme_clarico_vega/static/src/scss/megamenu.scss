@@ -162,6 +162,8 @@ INDEX:
 				margin: 0px 8px 8px 8px;
 				img
 				{
+// 				TAG
+				    border: 10px solid red;
 					opacity:1;
 				}
 			}
@@ -512,9 +514,7 @@ INDEX:
 		overflow: hidden;
 		img
 		{
-// 		    tag
-            filter:blur(20px);
-            border:1px solid red;
+
 			max-width: 100%;
   			@include transition(all,0.4s,ease-in-out);
 		}
@@ -540,8 +540,7 @@ INDEX:
 			{
 				&:before
 				{
-// 				    tag
-				    filter:blur(0px);
+
 					@include transform(scale(1));
 				}
 			}
