@@ -513,13 +513,11 @@ INDEX:
 		img
 		{
 // 		    tag
-            filter:blur(100px);
+            filter:blur(20px);
+            border:1px solid red;
 			max-width: 100%;
   			@include transition(all,0.4s,ease-in-out);
 		}
-		&:hover{
-		// 				    tag
-				    filter:blur(0px);}
 		.te_border_div
 		{
 			@include position(relative);
@@ -542,7 +540,8 @@ INDEX:
 			{
 				&:before
 				{
-
+// 				    tag
+				    filter:blur(0px);
 					@include transform(scale(1));
 				}
 			}
