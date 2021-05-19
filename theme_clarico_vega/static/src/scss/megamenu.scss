@@ -144,8 +144,7 @@ INDEX:
 		color:nth($f_color,19);	
 	}
 	section.te_image {
-// 	TAG
-	border: 1px solid red;
+// nope
         margin-bottom: 15px;
     }
 	@include media-breakpoint-down(md)
@@ -199,6 +198,8 @@ INDEX:
 	{
 	    .cat-column{
             section.te_image {
+            // 	TAG
+	border: 1px solid red;
                 margin: 0px 8px;
             }
         }
