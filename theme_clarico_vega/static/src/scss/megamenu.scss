@@ -159,11 +159,12 @@ INDEX:
 			}
 			.te_image
 			{
+			// 				TAG
+				    border: 10px solid red;
 				margin: 0px 8px 8px 8px;
 				img
 				{
-// 				TAG
-				    border: 10px solid red;
+// already tried. didn't work.
 					opacity:1;
 				}
 			}
