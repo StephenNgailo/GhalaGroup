@@ -144,6 +144,8 @@ INDEX:
 		color:nth($f_color,19);	
 	}
 	section.te_image {
+// 	TAG
+	border: 1px solid red;
         margin-bottom: 15px;
     }
 	@include media-breakpoint-down(md)
@@ -159,8 +161,7 @@ INDEX:
 			}
 			.te_image
 			{
-			// 				TAG
-				    border: 10px solid red;
+// 			also tried. nope.
 				margin: 0px 8px 8px 8px;
 				img
 				{
