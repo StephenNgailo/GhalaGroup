@@ -372,12 +372,10 @@ header {
                     background-repeat: no-repeat;
                     width: 22px;
                     height: 22px;
-                    @include media-breakpoint-down(lg) {
-//                   tag  search icon for phones
+                    @include media-breakpoint-down(xs) {
+//                     changes icon for popover
                         width: 19px !important;
                         height: 19px;
-                        background-image: url('/theme_clarico_vega/static/src/img/header_icons/white_search_icon.svg');
-
                     }
                     &:before{
                         display:none;
@@ -457,7 +455,10 @@ header {
                         width: 19px;
                         height: 19px;
                         vertical-align: unset;
-                        /*}*/
+                        @include media-breakpoint-down(lg) {
+                        background-image: url('/theme_clarico_vega/static/src/img/header_icons/white_search_icon.svg');
+
+                        }
                         &:before{
                             display: none;
                         }
