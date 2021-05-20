@@ -819,6 +819,7 @@
 //(This Class is use 3 Columns all Style use )
 .te_feature_image  
 {
+  border: 10px dotted red;
   @include container;
   @include width(auto,100%);
 }
