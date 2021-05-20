@@ -494,8 +494,9 @@ header {
             .te_cart_icon_head {
                 a i {
                     background: url('/theme_clarico_vega/static/src/img/header_icons/cart.svg') 100% 100% no-repeat;
-                    width: 24px;
-                    height: 24px;
+                        width: 22px;
+                        height: 22px;
+                        vertical-align: middle;
                     @include media-breakpoint-down(xs) {
                         width: 20px !important;
                     }
@@ -507,8 +508,9 @@ header {
             .te_wish_icon_head {
                 a i {
                     background: url('/theme_clarico_vega/static/src/img/header_icons/wishlist.svg') 100% 100% no-repeat;
-                    width: 24px;
-                    height: 24px;
+                        width: 22px;
+                        height: 22px;
+                        vertical-align: middle;
                     &:before{
                         display:none;
                     }
@@ -525,9 +527,9 @@ header {
                     span{
                         text-decoration: none;
                         background: url('/theme_clarico_vega/static/src/img/header_icons/user.svg') 100% no-repeat;
-                        width: 24px;
-                        height: 24px;
-//                         vertical-align: middle;
+                        width: 22px;
+                        height: 22px;
+                        vertical-align: middle;
                         &:before{
                             display:none;
                         }
