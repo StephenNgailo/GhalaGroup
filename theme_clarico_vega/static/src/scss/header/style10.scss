@@ -539,7 +539,8 @@ header {
             }
             .te_user_account {
                 .dropdown-toggle {
-                    vertical-align: super;
+//                 TAG
+//                     vertical-align: super;
                     &:after {
                         @include media-breakpoint-down(sm) {
                             margin-left: 0px;
