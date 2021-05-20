@@ -319,7 +319,13 @@ div[name="mail_button"]
 	border-radius: 5px;
 // 	tag
 	.te_theme_button{
-	background-color: #a9436d; 
+	background-color: #a9436d;
+	}
+	.te_theme_button: after{
+	border-bottom: 2px solid #a9436d;
+	}
+	.te_theme_button: before{
+	border-bottom: 2px solid #a9436d;
 	}
 }
 .te_add_flip_box
