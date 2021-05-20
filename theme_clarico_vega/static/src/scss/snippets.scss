@@ -819,7 +819,7 @@
 //(This Class is use 3 Columns all Style use )
 .te_feature_image  
 {
-  border: 10px dotted red;
+
   @include container;
   @include width(auto,100%);
 }
@@ -880,6 +880,8 @@
 		@include position(relative) 
 		img
 		{
+// 		    tag images in the mega menu
+		    border: 10px solid red;
 			@include transition(all,.4s,ease-out)
 		}	
 	}
