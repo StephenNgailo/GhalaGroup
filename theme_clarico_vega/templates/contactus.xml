@@ -37,12 +37,12 @@
             <!-- TODO widget contact must add itemprop attributes -->
             <t t-set="company" t-value="res_company.partner_id"/>
             <div class="row">
-                <section class="col-lg-4">
+                <section class="col-lg-3">
                     <div class="te_add_flip_box">
                         <div class="te_add_flip_front text-center">
                             <i class="fa fa-map-marker fa-4x"></i>
-                            <h2 class="pt-2">Corporate Office</h2>
-                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>
+                            <h2 class="pt-2">Visit Our Store</h2>
+<!--                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>-->
                         </div>
                         <div class="te_add_flip_back">
                             <div class="pb-2">
@@ -67,12 +67,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-4">
+                <section class="col-lg-3">
                     <div class="te_add_flip_box">
                         <div class="te_add_flip_front text-center">
                             <i class="fa fa-phone fa-4x"></i>
                             <h2 class="pt-2">Call Us To Schedule</h2>
-                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>
+<!--                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>-->
                         </div>
                         <div class="te_add_flip_back">
                             <h3>Call Us Today!</h3>
@@ -84,12 +84,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-4">
+                <section class="col-lg-3">
                     <div class="te_add_flip_box">
                         <div class="te_add_flip_front text-center">
                             <i class="fa fa-envelope fa-4x"></i>
                             <h2 class="pt-2">Send Us An Email</h2>
-                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>
+<!--                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>-->
                         </div>
                         <div class="te_add_flip_back">
                             <h3>We're Standing By!</h3>
@@ -101,6 +101,24 @@
                         </div>
                     </div>
                 </section>
+                <section class="col-lg-3">
+                    <div class="te_add_flip_box">
+                        <div class="te_add_flip_front text-center">
+                            <i class="fab fa-whatsapp fa-4x"></i>
+                            <h2 class="pt-2">Message us now</h2>
+<!--                            <p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>-->
+                        </div>
+                        <div class="te_add_flip_back">
+                            <h3>Reach us on Whatsapp!</h3>
+<!--                            Email:-->
+<!--                            <t t-esc="company.email"/>-->
+                            <section>
+                                <a href="#" class="btn btn-primary te_theme_button mt-3">Send A Message</a>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </address>
         <t t-if="res_company.google_map_img()">
