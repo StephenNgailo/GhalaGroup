@@ -329,7 +329,9 @@ div[name="mail_button"]
 		}
 		.te_add_flip_front
 		{
-			z-index: -1;
+// 		tag contact flip
+			z-index: 0;
+			-webkit-transform:translate3d(0,0,0);
 			transform: rotateY(180deg);
 
 		}
@@ -339,8 +341,7 @@ div[name="mail_button"]
 {
     transform: rotateY(0);
     transition: transform .4s cubic-bezier(.2,.85,.4,1.275);
-	z-index: 0;
-	-webkit-transform:translate3d(0,0,0);
+	z-index: 10;
 	padding:20px;
 	text-align: center;
 	backface-visibility: hidden;
