@@ -226,7 +226,11 @@ header {
                 }
             }
             .te_header_right_icon {
-                text-align:right;
+//                 TAG icon's parent
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 @media (min-width:768px) and (max-width:991px){
                     display: inherit;
                 }
