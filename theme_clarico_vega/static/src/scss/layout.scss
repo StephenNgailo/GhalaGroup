@@ -305,7 +305,7 @@ div[name="mail_button"]
 }
 .te_add_flip_back
 {
-// tag 
+// tag
 	background-color:rgba(nth($f_color,19),1);
 	color:nth($f_color,5);
 	transform: rotateY(-180deg);
@@ -313,10 +313,14 @@ div[name="mail_button"]
 	@include position(absolute,0,0,null,0);
 	z-index: -1;
 	perspective: 1000px;
-	padding:50px 20px;
+	padding:45px 20px;
 	text-align: center;
 	backface-visibility: hidden;
 	border-radius: 5px;
+// 	tag
+	.te_theme_button{
+	background-color: #a9436d; 
+	}
 }
 .te_add_flip_box
 {
