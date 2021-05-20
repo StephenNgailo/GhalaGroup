@@ -490,11 +490,12 @@ header {
                     }
                 }
             }
+//             TAG user cart wishlist
             .te_cart_icon_head {
                 a i {
                     background: url('/theme_clarico_vega/static/src/img/header_icons/cart.svg') 100% 100% no-repeat;
-                    width: 23px;
-                    height: 22px;
+                    width: 24px;
+                    height: 24px;
                     @include media-breakpoint-down(xs) {
                         width: 20px !important;
                     }
@@ -506,8 +507,8 @@ header {
             .te_wish_icon_head {
                 a i {
                     background: url('/theme_clarico_vega/static/src/img/header_icons/wishlist.svg') 100% 100% no-repeat;
-                    width: 23px;
-                    height: 22px;
+                    width: 24px;
+                    height: 24px;
                     &:before{
                         display:none;
                     }
@@ -524,14 +525,14 @@ header {
                     span{
                         text-decoration: none;
                         background: url('/theme_clarico_vega/static/src/img/header_icons/user.svg') 100% no-repeat;
-                        width: 19px;
+                        width: 24px;
                         height: 24px;
-                        vertical-align: middle;
+//                         vertical-align: middle;
                         &:before{
                             display:none;
                         }
                         @include media-breakpoint-down(xs) {
-                            width: 17px !important;
+                            width: 20px !important;
                         }
                     }
                 }
