@@ -329,8 +329,11 @@ div[name="mail_button"]
 		}
 		.te_add_flip_front
 		{
-			z-index: -1;
+// 		tag the css for the contact us cards
+			z-index: 0;
+			-webkit-transform:translate3d(0,0,0);
 			transform: rotateY(180deg);
+
 		}
 	}
 }
