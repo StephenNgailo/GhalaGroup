@@ -305,14 +305,15 @@ div[name="mail_button"]
 }
 .te_add_flip_back
 {
-	background-color:rgba(nth($f_color,19),0.7);
+// tag 
+	background-color:rgba(nth($f_color,19),1);
 	color:nth($f_color,5);
 	transform: rotateY(-180deg);
 	transition: transform .4s cubic-bezier(.2,.85,.4,1.275);
 	@include position(absolute,0,0,null,0);
 	z-index: -1;
 	perspective: 1000px;
-	padding:30px 20px;
+	padding:50px 20px;
 	text-align: center;
 	backface-visibility: hidden;
 	border-radius: 5px;
@@ -326,12 +327,14 @@ div[name="mail_button"]
 		{
 			z-index:1;
 			transform: rotateY(0);
+			// 		tag
+         a,span{
+         color: white;
+         }
 		}
 		.te_add_flip_front
 		{
-// 		tag contact flip
 			z-index: -1;
-// 			-webkit-transform:translate3d(0,0,0);
 			transform: rotateY(180deg);
 
 		}
@@ -503,6 +506,7 @@ div[name="mail_button"]
 		}
 		.fa-map-marker
 		{
+
 			&:before
 			{
 				content:'\f2bb';
