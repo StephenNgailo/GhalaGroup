@@ -883,9 +883,10 @@
 		img
 		{
 // 		    tag images in the mega menu
+            width: 80%;
             filter:grayscale(100%);
 			@include transition(all,.4s,ease-out)
-		}	
+		}
 	}
 	.te_center_position
 	{
