@@ -263,7 +263,8 @@ header {
                 .te_header_search {
                     padding: 0px 8px 0px 15px;
                     @include media-breakpoint-down(sm){
-                        padding: 0 8px;
+//                      tag   mobile padding
+                        padding: 0 10px;
                     }
                     @include media-breakpoint-down(md){
                         padding: 0 8px 0px 12px;
@@ -370,12 +371,13 @@ header {
                     background-image: url('/theme_clarico_vega/static/src/img/header_icons/search_icon.svg');
                     background-size: 100%;
                     background-repeat: no-repeat;
-                    width: 22px;
-                    height: 22px;
+                  
+                     width: 19px !important;
+                        height: 19px;
                     @include media-breakpoint-down(xs) {
 //                     changes icon for popover
-                        width: 19px !important;
-                        height: 19px;
+                          width: 22px;
+                          height: 22px;
                     }
                     &:before{
                         display:none;
@@ -417,6 +419,7 @@ header {
                     margin-right: 8px;
                     & .te_srch_icon_header {
                         display:block;
+                        vertical_align:text-top;
                         a {
                             outline: none;
                         }
@@ -452,8 +455,8 @@ header {
                         background-image: url('/theme_clarico_vega/static/src/img/header_icons/search_icon.svg');
                         background-size: 100%;
                         background-repeat: no-repeat;
-                        width: 19px;
-                        height: 19px;
+                        width: 20px;
+                        height: 22px;
                         vertical-align: unset;
                         @include media-breakpoint-down(lg) {
                         background-image: url('/theme_clarico_vega/static/src/img/header_icons/white_search_icon.svg');
@@ -568,7 +571,8 @@ header {
                 }
             }
             .te_signin .btn-link{
-              vertical-align: super;
+//             tag
+//               vertical-align: super;
             }
             .te_signin {
                 padding: 0px !important;
