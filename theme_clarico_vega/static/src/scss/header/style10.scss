@@ -457,7 +457,8 @@ header {
                         background-repeat: no-repeat;
                         width: 20px;
                         height: 22px;
-                        vertical-align: unset;
+//                         tag mobile search align
+                        vertical-align: text-top;
                         @include media-breakpoint-down(lg) {
                         background-image: url('/theme_clarico_vega/static/src/img/header_icons/white_search_icon.svg');
 
