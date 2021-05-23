@@ -864,10 +864,10 @@
 	}
 }
 /*=============== 25. 3 Columns (Style 5) =======================*/
-ul#top_menu li:first-of-type .s_three_columns .te_image_overflow .te_col_ind{
+ul#top_menu li:first-child .s_three_columns .te_image_overflow .te_col_ind{
  width: 70% !important;
 }
-ul#top_menu li:last-of-type .s_three_columns .te_image_overflow .te_col_ind{
+ul#top_menu li:last-child .s_three_columns .te_image_overflow .te_col_ind{
  width: 51% !important;
 }
 .te_col_ind
