@@ -702,6 +702,8 @@ td.text-center.text-xl-right.border-0
 
 	.progress-wizard .progress-wizard-step
 	{
+			background: #141414 !important;
+
 		border:$input-border-width solid $input-border-color;
 		@include position(relative)
 		padding: 0 15px 0 30px;
