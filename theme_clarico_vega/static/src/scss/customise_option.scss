@@ -5,8 +5,11 @@
     display: none !important;
 }
 // FOOTER AKIGNEMENT
+
 #footer .s_share {
-text-align: left !important;
+  @include media-breakpoint-down(sm) {
+         text-align: left !important;
+        }
  }
 /*=================== Theme Customize modal =================*/
 body
