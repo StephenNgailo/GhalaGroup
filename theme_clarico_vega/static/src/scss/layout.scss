@@ -317,10 +317,10 @@ div[name="mail_button"]
 	text-align: center;
 	backface-visibility: hidden;
 	border-radius: 5px;
-	//TAG FLICKER SAFARI
-	-webkit-transform:translate3d(0,0,0) !important;
-	-webkit-transform-style: preserve-3d !important;
-	-webkit-backface-visibility: hidden !important;
+// 	//TAG FLICKER SAFARI
+// 	-webkit-transform:translate3d(0,0,0) !important;
+// 	-webkit-transform-style: preserve-3d !important;
+// 	-webkit-backface-visibility: hidden !important;
 // 	tag
 	.te_theme_button{
 	background-color: #a9436d;
