@@ -337,9 +337,9 @@ div[name="mail_button"]
 		{
 			z-index:1;
 			transform: rotateY(0);
-			-webkit-transform:translate3d(0,0,0);
-			-webkit-transform-style: preserve-3d;
-			-webkit-backface-visibility: hidden;
+			-webkit-transform:translate3d(0,0,0) !important;
+			-webkit-transform-style: preserve-3d !important;
+			-webkit-backface-visibility: hidden !important;
 			// 		tag
          a,span{
          color: white;
