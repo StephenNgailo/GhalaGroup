@@ -42,8 +42,14 @@ class Madfox_Product(models.Model):
                 mad_seq = category.parent_id.x_studio_category_short_code_field.x_name + "/" + category.x_studio_category_short_code_field.x_name
 
             mad_seq = mad_seq + "/" + seq1
-
+          
         return mad_seq
+    @api.onchange('categ_id')
+    def _onchange_categ_id(self):
+        if self.categ_id:
+            self.default_code = self.getInternalNumber(self.categ_id.id)
+            
+
 
 
 
