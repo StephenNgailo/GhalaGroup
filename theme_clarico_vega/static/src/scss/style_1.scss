@@ -704,7 +704,7 @@ td.text-center.text-xl-right.border-0
 	{
 // 	the stages we haven't reached
 			background: #f0f4f3 !important;
-// 			color: black !important;
+			color: black !important;
 
 		border:$input-border-width solid $input-border-color;
 		@include position(relative)
@@ -761,17 +761,13 @@ td.text-center.text-xl-right.border-0
 		{
 		    background: #f0f4f3 !important;
 // 		    tag
-// 		    color: black !important;
+		    color: black !important;
 			&:before
 			{
 // 			tag
 				border-left: 10px solid #b3054d !important;
 			}
 		}
-	}
-	.oe_website_sale .row > .te_cart_wizard_main > .wizard .progress-wizard .progress-wizard-step > .progress-wizard-steplabel
-	{
-	    color: black !important;
 	}
 	.progress-wizard .progress-wizard-step.complete
 	{
