@@ -769,6 +769,10 @@ td.text-center.text-xl-right.border-0
 			}
 		}
 	}
+	.oe_website_sale .row > .te_cart_wizard_main > .wizard .progress-wizard .progress-wizard-step > .progress-wizard-steplabel
+	{
+	    color: black !important;
+	}
 	.progress-wizard .progress-wizard-step.complete
 	{
 		background: #9e9e9e !important;
