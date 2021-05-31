@@ -716,7 +716,6 @@ td.text-center.text-xl-right.border-0
 		> .progress-wizard-bar
 		{
 // 		tag
-		color: black !important;
 			height: auto;
 			background-color: nth($f_color,27);
 			@include position(absolute,-1px,-10px,auto,auto)
