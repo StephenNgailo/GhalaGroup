@@ -6,7 +6,10 @@ te_product_ind:hover #add_to_cart
 {
     background: #B2054D !important;
 }
-
+@media (min-width: 1599.98px)
+.o_wsale_products_grid_table_wrapper table .te_shop_grid .o_wsale_product_grid_wrapper .oe_product_image .new_span img {
+height: 13.7rem !important;
+}
 
 #myCarousel1621763142455 .carousel-indicators{
     display: none !important;
