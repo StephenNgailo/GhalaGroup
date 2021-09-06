@@ -89,6 +89,7 @@ class PaymentAcquirerAtom(models.Model):
 
         r = requests.post(url, headers=headers)
         json_data = json.loads(r.text)
+        base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
         _token = json_data['access_token']
         outlet = "78c57fdf-144e-45e9-b290-f0d27d3f6da1"
         url = "https://api-gateway.sandbox.ngenius-payments.com/transactions/outlets/"+outlet+"/orders"
@@ -106,8 +107,8 @@ class PaymentAcquirerAtom(models.Model):
 
             },
             'merchantAttributes': {
-                'redirectUrl': 'https://ghalagroup-gg43-3163649.dev.odoo.com/payment/ngenius/return',
-                'cancelUrl': 'https://ghalagroup-gg43-3163649.dev.odoo.com/payment/ngenius/cancel',
+                'redirectUrl': urls.url_join(base_url, '/payment/ngenius/return'),
+                'cancelUrl': urls.url_join(base_url, '/payment/ngenius/cancel'),
             },
             'merchantOrderReference': values['reference'],
 
