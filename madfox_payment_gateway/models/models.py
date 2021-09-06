@@ -106,8 +106,8 @@ class PaymentAcquirerAtom(models.Model):
 
             },
             'merchantAttributes': {
-                'redirectUrl': '/payment/ngenius/return',
-                'cancelUrl': '/payment/ngenius/cancel',
+                'redirectUrl': 'https://ghalagroup-gg43-3163649.dev.odoo.com/payment/ngenius/return',
+                'cancelUrl': 'https://ghalagroup-gg43-3163649.dev.odoo.com/payment/ngenius/cancel',
             },
             'merchantOrderReference': values['reference'],
 
