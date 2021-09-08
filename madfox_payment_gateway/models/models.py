@@ -224,9 +224,14 @@ class PaymentAcquirerAtom(models.Model):
                 'billing_partner_phone': billing_partner.phone,
                 'billing_partner_state': billing_partner.state_id,
             })
+        my_url=''
+        if self.provider == 'ngenius':
+            my_url = self.get_ngenius_urls(values)
+        else:
+            my_url= self._context.get('tx_url', self.get_form_action_url())
 
         values.update({
-            'tx_url': self.get_ngenius_urls(values),
+            'tx_url': my_url,
             'submit_class': self._context.get('submit_class', 'btn btn-link'),
             'submit_txt': self._context.get('submit_txt'),
             'acquirer': self,
