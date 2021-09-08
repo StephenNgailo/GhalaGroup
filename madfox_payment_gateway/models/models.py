@@ -138,7 +138,7 @@ class PaymentAcquirerAtom(models.Model):
                           EMAIL=str(values.get ('partner_email')) ,
                           MOBILE_NO = str(values.get('partner_phone')),
                           CALL_BACK_URL=urls.url_join (base_url, '/payment/ngenius/return/'),
-                          tx_url= self.get_ngenius_urls(values),,
+                          tx_url= self.get_ngenius_urls(values),
                           )
 
         return ngenius_values
