@@ -13,6 +13,7 @@ class Madfox_Product(models.Model):
         barcode = self.env['ir.sequence'].next_by_code('mf_barcode_seq')
         vals['barcode'] = barcode
         res = super(Madfox_Product, self).create(vals)
+        raise exceptions.ValidationError(res.type)
         # res.barcode = barcode
         if not res.default_code:
             res.default_code= self.getInternalNumber(res.categ_id.id)
