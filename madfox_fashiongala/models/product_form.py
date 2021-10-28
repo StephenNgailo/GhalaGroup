@@ -15,7 +15,7 @@ class Madfox_Product(models.Model):
         res = super(Madfox_Product, self).create(vals)
         
         # res.barcode = barcode
-        if not res.default_code:
+        if not res.default_code and res.type !='service':
             res.default_code= self.getInternalNumber(res.categ_id.id)
         return res
 
