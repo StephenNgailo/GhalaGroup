@@ -49,16 +49,16 @@ class PaymentAcquirerAtom(models.Model):
     @api.model
     def _get_ngenius_urls(self):
         """ Atom URLS """
-        url = 'https://api-gateway.sandbox.stanbicbank.co.tz/identity/auth/access-token?realName=sandboxStanbicBankTZA'
+        url = 'https://api-gateway.stanbicbank.co.tz/identity/auth/access-token?realName=sandboxStanbicBankTZA'
         headers = {
-            'Authorization': 'Basic NjFkNDEwOGItYWZiZC00MzMwLWI5MWItZjE0ZmY1NGRkYTE4OmJmMjAzOGZkLTZlODctNGQzOC05OTRkLWYwYzk0MWNhNjE5NQ==',
+            'Authorization': 'Basic MWYzMjY3N2YtMmQ0Ny00YTY2LWI1YmMtYWExYTY1MDUzZWY2OmE5OTYxNWZiLTA5NWItNDQwZC1iNWI5LTU0YWRmNDZhNzc1YQ==',
             'Content-Type': 'application/vnd.ni-identity.v1+json'}
 
         r = requests.post(url, headers=headers)
         json_data = json.loads(r.text)
         _token = json_data['access_token']
-        outlet = "78c57fdf-144e-45e9-b290-f0d27d3f6da1"
-        url = "https://api-gateway.sandbox.ngenius-payments.com/transactions/outlets/"+outlet+"/orders"
+        outlet = "910b7993-c0e2-48fa-b246-b9fd7332b6de"
+        url = "https://api-gateway.stanbicbank.co.tz/transactions/outlets/"+outlet+"/orders"
         headers = {
             'Authorization': 'Bearer '+_token,
             'Content-Type': 'application/vnd.ni-payment.v2+json',
@@ -82,17 +82,17 @@ class PaymentAcquirerAtom(models.Model):
     @api.model
     def get_ngenius_urls(self, values):
         """ Atom URLS """
-        url = 'https://api-gateway.sandbox.stanbicbank.co.tz/identity/auth/access-token?realName=sandboxStanbicBankTZA'
+        url = 'https://api-gateway.stanbicbank.co.tz/identity/auth/access-token?realName=sandboxStanbicBankTZA'
         headers = {
-            'Authorization': 'Basic NjFkNDEwOGItYWZiZC00MzMwLWI5MWItZjE0ZmY1NGRkYTE4OmJmMjAzOGZkLTZlODctNGQzOC05OTRkLWYwYzk0MWNhNjE5NQ==',
+            'Authorization': 'Basic MWYzMjY3N2YtMmQ0Ny00YTY2LWI1YmMtYWExYTY1MDUzZWY2OmE5OTYxNWZiLTA5NWItNDQwZC1iNWI5LTU0YWRmNDZhNzc1YQ==',
             'Content-Type': 'application/vnd.ni-identity.v1+json'}
 
         r = requests.post(url, headers=headers)
         json_data = json.loads(r.text)
         base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
         _token = json_data['access_token']
-        outlet = "78c57fdf-144e-45e9-b290-f0d27d3f6da1"
-        url = "https://api-gateway.sandbox.ngenius-payments.com/transactions/outlets/"+outlet+"/orders"
+        outlet = "910b7993-c0e2-48fa-b246-b9fd7332b6de"
+        url = "https://api-gateway.stanbicbank.co.tz/transactions/outlets/"+outlet+"/orders"
         headers = {
             'Authorization': 'Bearer '+_token,
             'Content-Type': 'application/vnd.ni-payment.v2+json',
