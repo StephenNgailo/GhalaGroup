@@ -41,15 +41,15 @@ class AtomController(http.Controller):
         _logger.info(
             'ngenius: entering form_feedback with post data %s', pprint.pformat(post))
         if post:
-            url = 'https://api-gateway.sandbox.stanbicbank.co.tz/identity/auth/access-token?realName=sandboxStanbicBankTZA'
+            url = 'https://api-gateway.stanbicbank.co.tz/identity/auth/access-token?realName=sandboxStanbicBankTZA'
             headers = {
-                'Authorization': 'Basic NjFkNDEwOGItYWZiZC00MzMwLWI5MWItZjE0ZmY1NGRkYTE4OmJmMjAzOGZkLTZlODctNGQzOC05OTRkLWYwYzk0MWNhNjE5NQ==',
+                'Authorization': 'Basic MWYzMjY3N2YtMmQ0Ny00YTY2LWI1YmMtYWExYTY1MDUzZWY2OmE5OTYxNWZiLTA5NWItNDQwZC1iNWI5LTU0YWRmNDZhNzc1YQ==',
                 'Content-Type': 'application/vnd.ni-identity.v1+json'}
 
             r = requests.post(url, headers=headers)
             json_data = json.loads(r.text)
             _token = json_data['access_token']
-            outlet = "78c57fdf-144e-45e9-b290-f0d27d3f6da1"
+            outlet = "910b7993-c0e2-48fa-b246-b9fd7332b6de"
             url = "https://api-gateway.sandbox.stanbicbank.co.tz/transactions/outlets/" + outlet + "/orders/" + post["ref"]
             headers = {
                 'Authorization': 'Bearer ' + _token,
