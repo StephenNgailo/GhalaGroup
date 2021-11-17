@@ -50,7 +50,7 @@ class AtomController(http.Controller):
             json_data = json.loads(r.text)
             _token = json_data['access_token']
             outlet = "910b7993-c0e2-48fa-b246-b9fd7332b6de"
-            url = "https://api-gateway.sandbox.stanbicbank.co.tz/transactions/outlets/" + outlet + "/orders/" + post["ref"]
+            url = "https://api-gateway.stanbicbank.co.tz/transactions/outlets/" + outlet + "/orders/" + post["ref"]
             headers = {
                 'Authorization': 'Bearer ' + _token,
                 'Accept': 'application/vnd.ni-payment.v2+json',
